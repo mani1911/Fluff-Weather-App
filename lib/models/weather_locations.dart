@@ -9,6 +9,8 @@ class WeatherLocation {
   final int wind;
   final int rain;
   final int humidity;
+  final double lat;
+  final double long;
 
   WeatherLocation({
     required this.city,
@@ -19,12 +21,16 @@ class WeatherLocation {
     required this.wind,
     required this.rain,
     required this.humidity,
+    required this.lat,
+    required this.long,
   });
 }
 
 final locationList = [
   WeatherLocation(
     city: 'Kolkata',
+    lat: 22.5726,
+    long: 88.3639,
     dateTime: '07:50 PM — Monday, 9 Nov 2020',
     temparature: '24\u2103',
     weatherType: 'Night',
@@ -34,7 +40,9 @@ final locationList = [
     humidity: 10,
   ),
   WeatherLocation(
-    city: 'London',
+    city: 'Chennai',
+    lat: 13.0827,
+    long: 80.2707,
     dateTime: '02:20 PM — Monday, 9 Nov 2020',
     temparature: '15\u2103',
     weatherType: 'Cloudy',
@@ -44,7 +52,9 @@ final locationList = [
     humidity: 82,
   ),
   WeatherLocation(
-    city: 'New York',
+    city: 'Banglore',
+    lat: 12.9716,
+    long: 77.5946,
     dateTime: '09:20 AM — Monday, 9 Nov 2020',
     temparature: '17\u2103',
     weatherType: 'Sunny',
@@ -54,7 +64,9 @@ final locationList = [
     humidity: 61,
   ),
   WeatherLocation(
-    city: 'Sydney',
+    city: 'Hyderabad',
+    lat: 17.3850,
+    long: 78.4867,
     dateTime: '01:20 AM — Tuesday, 10 Nov 2020',
     temparature: '10\u2103',
     weatherType: 'Rainy',
